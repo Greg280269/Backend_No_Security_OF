@@ -21,7 +21,7 @@ public class RoleServiceImplements implements IRoleServices {
     }
 
     @Override
-    public void delete(Long idRole) {
+    public void delete(int idRole) {
         rR.deleteById(idRole);
     }
 
@@ -31,7 +31,7 @@ public class RoleServiceImplements implements IRoleServices {
     }
 
     @Override
-    public Roles listId(Long id) {
+    public Roles listId(int id) {
         return rR.findById(id).orElse(new Roles());
     }
 }

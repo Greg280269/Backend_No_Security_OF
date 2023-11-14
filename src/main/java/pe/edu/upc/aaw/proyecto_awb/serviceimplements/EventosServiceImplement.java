@@ -25,7 +25,7 @@ public class EventosServiceImplement implements IEventosService {
 
     @Override
     public void delete(int id) {
-        eR.findById(id);
+        eR.deleteById(id);
     }
 
     @Override

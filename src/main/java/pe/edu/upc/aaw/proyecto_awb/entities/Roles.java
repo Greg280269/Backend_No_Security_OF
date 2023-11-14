@@ -9,7 +9,7 @@ public class Roles  {
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private int id;
 
     @Column(name = "rol",length = 50, nullable = false)
     private String rol;
@@ -22,17 +22,17 @@ public class Roles  {
     public Roles() {
     }
 
-    public Roles(Long id, String rol, Users user) {
+    public Roles(int id, String rol, Users user) {
         this.id = id;
         this.rol = rol;
         this.user = user;
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
